@@ -1,1 +1,1 @@
-"# Gameteca" 
+# Gameteca
