@@ -7,6 +7,7 @@ body {
     height: 1000px;
 }
 
+/* header */
 header#cabecalho {
     display: flex;
     justify-content: center;
@@ -18,23 +19,6 @@ header#cabecalho {
     background-image: url('/media/images/back-head.jpg');
 }
 
-
-/* Header */
-header#cabecalho a {
-    position: absolute;
-    font-size: 14pt;
-    font-family: cursive;
-    color: white;
-    padding: 15px;
-    background-color: black;
-    border: 1px solid wheat;
-    border-radius: 20px;
-    top: 20px;
-    left: 1300px;
-}
-header#cabecalho :hover a {
-    font-weight: bold;
-}
 
 /* window gameplay */
 div#windows-play {
