@@ -1,2 +1,59 @@
 @charset "UTF-8";
 
+
+
+body {
+    background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
+    height: 1000px;
+}
+
+header#cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: yellow;
+    height: 1000px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.8);
+    background-image: url('/media/images/back-head.jpg');
+}
+
+
+/* Header */
+header#cabecalho a {
+    position: absolute;
+    font-size: 14pt;
+    font-family: cursive;
+    color: white;
+    padding: 15px;
+    background-color: black;
+    border: 1px solid wheat;
+    border-radius: 20px;
+    top: 20px;
+    left: 1300px;
+}
+header#cabecalho :hover a {
+    font-weight: bold;
+}
+
+/* window gameplay */
+div#windows-play {
+    position: absolute;
+    top: 100px;
+    color: blueviolet;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+div#windows-play h2 {
+    position: relative;
+    font: 3em cursive;
+    font-weight: bolder;
+    top: -10px;
+}
+div#windows-play video {
+    position: relative;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 40px;
+}
