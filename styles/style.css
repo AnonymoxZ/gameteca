@@ -1,43 +1,82 @@
 @charset "UTF-8";
 
 
+@media (min-width:580px) {
+    body {
+        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
+        height: 1000px;
+    }
 
-body {
-    background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-    height: 1000px;
-}
-
-/* header */
-header#cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: yellow;
-    height: 1000px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-    background-image: url('/media/images/back-head.jpg');
-}
+    /* header */
+    header#cabecalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: yellow;
+        height: 1000px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,.8);
+        background-image: url('/media/images/back-head.jpg');
+    }
 
 
-/* window gameplay */
-div#windows-play {
-    position: absolute;
-    top: 100px;
-    color: blueviolet;
-    background-color: rgba(0,0,0,.8);
-    border-radius: 40px;
-    text-shadow: 2px 2px 2px black;
+    /* window gameplay */
+    div#windows-play {
+        position: absolute;
+        top: 100px;
+        color: blueviolet;
+        background-color: rgba(0,0,0,.8);
+        border-radius: 40px;
+        text-shadow: 2px 2px 2px black;
+    }
+    div#windows-play h2 {
+        position: relative;
+        font: 3em cursive;
+        font-weight: bolder;
+        top: -10px;
+    }
+    div#windows-play video {
+        position: relative;
+        width: 35rem;
+        height: 25rem;
+        border-radius: 40px;
+    }
 }
-div#windows-play h2 {
-    position: relative;
-    font: 3em cursive;
-    font-weight: bolder;
-    top: -10px;
-}
-div#windows-play video {
-    position: relative;
-    width: 35rem;
-    height: 25rem;
-    border-radius: 40px;
+@media (max-width:580px) {
+    body {
+        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
+        height: 1000px;   
+    }
+    /* header mobile */
+        header#cabecalho {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: yellow;
+            height: 1000px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,.8);
+            background-image: url('/media/images/back-head.jpg');
+        }
+    /* window gameplay mobile */
+    div#windows-play {
+        position: absolute;
+        top: 100px;
+        color: blueviolet;
+        background-color: rgba(0,0,0,.8);
+        border-radius: 40px;
+        text-shadow: 2px 2px 2px black;
+    }
+    div#windows-play h2 {
+        position: relative;
+        font: 3em cursive;
+        font-weight: bolder;
+        top: -10px;
+    }
+    div#windows-play video {
+        position: relative;
+        width: 25rem;
+        height: 20rem;
+        border-radius: 40px;
+    }
 }
