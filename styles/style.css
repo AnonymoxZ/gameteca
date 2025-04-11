@@ -1,122 +1,64 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Do+Hyeon&family=Graduate&family=Itim&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Antique&family=Zen+Antique+Soft&display=swap');
 
 
-@media (min-width:580px) {
-    body {
-        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-        height: 1000px;
-    }
 
-    /* header */
-    header#cabecalho {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: yellow;
-        height: 1000px;
-        box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-        background-image: url('/media/images/back-head.jpg');
-    }
-
-
-    /* window gameplay */
-    div#windows-play {
-        position: absolute;
-        top: 100px;
-        color: blueviolet;
-        background-color: rgba(0,0,0,.8);
-        border-radius: 40px;
-        text-shadow: 2px 2px 2px black;
-    }
-    div#windows-play h2 {
-        position: relative;
-        font: 3em cursive;
-        font-weight: bolder;
-        top: -10px;
-    }
-    div#windows-play video {
-        position: relative;
-        width: 35rem;
-        height: 25rem;
-        border-radius: 40px;
-    }
+/* reset */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-@media (max-width:580px) {
-    body {
-        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-        height: 1000px;   
-    }
-    /* header mobile */
-        header#cabecalho {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: yellow;
-            height: 1000px;
-            box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-            background-image: url('/media/images/back-head.jpg');
-        }
-    /* window gameplay mobile */
-    div#windows-play {
-        position: absolute;
-        top: 100px;
-        color: blueviolet;
-        background-color: rgba(0,0,0,.8);
-        border-radius: 40px;
-        text-shadow: 2px 2px 2px black;
-    }
-    div#windows-play h2 {
-        position: relative;
-        font: 3em cursive;
-        font-weight: bolder;
-        top: -10px;
-    }
-    div#windows-play video {
-        position: relative;
-        width: 25rem;
-        height: 20rem;
-        border-radius: 40px;
-    }
+body{
+    font-size: 100%;
+    list-style-type: none;
 }
 
-@media (max-width:400px) {
-    body {
-        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-        height: 1000px;   
-    }
-    /* header mobile */
-        header#cabecalho {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: yellow;
-            height: 1000px;
-            box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-            background-image: url('/media/images/back-head.jpg');
-        }
-    /* window gameplay mobile */
-    div#windows-play {
-        position: absolute;
-        top: 100px;
-        color: blueviolet;
-        background-color: rgba(0,0,0,.8);
-        border-radius: 40px;
-        text-shadow: 2px 2px 2px black;
-    }
-    div#windows-play h2 {
-        position: relative;
-        font: 3em cursive;
-        font-weight: bolder;
-        top: -10px;
-    }
-    div#windows-play video {
-        position: relative;
-        width: 19rem;
-        height: 15rem;
-        border-radius: 40px;
-    }
+/* --- */
 
+body {
+    background-color: black;
+    height: 900px;
+    color: white;    
+}
+
+header#header {
+    position: absolute;
+    font-family: 'Do Hyeon';
+}
+h1#title-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 260px;
+    top: -200px;
+    font-size: 40pt;
+}
+figure#container-img-header img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    border-radius: 50px;
+}
+menu {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    left: 240px;
+    top: -120px;
+}
+menu li {
+    display: inline-block;
+}
+
+nav#section-pages a {
+    display: block;
+    color: white;
+    padding: 10px;
+    left: 20px;
 }
