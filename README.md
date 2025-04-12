@@ -1,4 +1,4 @@
 # Gameteca
 
 
-Biblioteca de divulgação de jogos
+Repositório visual de video apresentações de projetos.

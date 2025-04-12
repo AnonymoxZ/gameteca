@@ -1,122 +1,236 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Do+Hyeon&family=Graduate&family=Itim&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Antique&family=Zen+Antique+Soft&display=swap');
 
 
-@media (min-width:580px) {
+
+/* reset */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+
+/* --- */
+
+body {
+    background-color: black;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+header#header {
+    position: absolute;
+    font-family: 'Do Hyeon';
+}
+h1#title-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 260px;
+    top: -200px;
+    font-size: 40pt;
+}
+figure#container-img-header img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    border-radius: 50px;
+}
+menu {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    left: 240px;
+    top: -120px;
+}
+menu li {
+    display: inline-block;
+}
+
+nav#section-pages a {
+    display: block;
+    color: white;
+    padding: 10px;
+    left: 20px;
+}
+
+div.container-videos {
+    position: absolute;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 350px;
+}
+
+div.video video {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+li.video-element {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 50px;
+    padding-bottom: 50px;
+    background-color: antiquewhite;
+}
+
+span.title-description {
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Do Hyeon', serif;
+}
+
+
+/* Screens at 873px */
+@media (max-width:873px) {
     body {
-        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-        height: 1000px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
     }
+    header#header {
+        position: absolute;
+        font-family: 'Do Hyeon';
+        top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    h1#title-header {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: -10px;
+        text-align: center;
+        align-items: center;
+        left: 0;
+        font-size: 30pt;
+    }
+    figure#container-img-header {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 190px;
+    } 
+    figure#container-img-header img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 190px;
+        border-radius: 50px;
+    }
+    menu {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid gray;
+        font-size: 20px;
+        left: 0;
+        top: 10px;
+    }
+    menu li {
+        display: inline-block;
+    }
+}
 
-    /* header */
-    header#cabecalho {
+/* screens at 435px */
+@media (max-width:435px){
+    header#header {
+        position: absolute;
+        font-family: 'Do Hyeon';
+        top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+    h1#title-header {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        top: -10px;
+        text-align: center;
+        align-items: center;
+        left: 0;
+        font-size: 25pt;
+    }
+    figure#container-img-header {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 190px;
+    } 
+    figure#container-img-header img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        border-radius: 50px;
+    }
+    menu {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid gray;
+        align-items: center;
+        font-size: 18px;
+        left: 0;
+        top: 10px;
+    }
+    div.container-videos {
+        position: absolute;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        width: 50%;
+        height: 30%;
+        top: 350px;
+    }
+    
+    div.video video {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        align-items: center;
+        flex-direction: column;
+        height: 330px;
+        width: 330px;
+        border: 1px solid black;
+    }
+    li.video-element {
+        display: inline-block;
+        align-items: center;
         text-align: center;
-        color: yellow;
-        height: 1000px;
-        box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-        background-image: url('/media/images/back-head.jpg');
+        justify-content: center;
+        margin: 15px;
+        border-radius: 50px;
+        padding-bottom: 50px;
+        background-color: antiquewhite;
     }
-
-
-    /* window gameplay */
-    div#windows-play {
-        position: absolute;
-        top: 100px;
-        color: blueviolet;
-        background-color: rgba(0,0,0,.8);
-        border-radius: 40px;
-        text-shadow: 2px 2px 2px black;
-    }
-    div#windows-play h2 {
+    
+    span.title-description {
         position: relative;
-        font: 3em cursive;
-        font-weight: bolder;
-        top: -10px;
-    }
-    div#windows-play video {
-        position: relative;
-        width: 35rem;
-        height: 25rem;
-        border-radius: 40px;
-    }
-}
-@media (max-width:580px) {
-    body {
-        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-        height: 1000px;   
-    }
-    /* header mobile */
-        header#cabecalho {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: yellow;
-            height: 1000px;
-            box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-            background-image: url('/media/images/back-head.jpg');
-        }
-    /* window gameplay mobile */
-    div#windows-play {
-        position: absolute;
-        top: 100px;
-        color: blueviolet;
-        background-color: rgba(0,0,0,.8);
-        border-radius: 40px;
-        text-shadow: 2px 2px 2px black;
-    }
-    div#windows-play h2 {
-        position: relative;
-        font: 3em cursive;
-        font-weight: bolder;
-        top: -10px;
-    }
-    div#windows-play video {
-        position: relative;
-        width: 25rem;
-        height: 20rem;
-        border-radius: 40px;
-    }
-}
-
-@media (max-width:400px) {
-    body {
-        background-image: linear-gradient(320deg,#c00707f9,#9817e7,#1a11c7);
-        height: 1000px;   
-    }
-    /* header mobile */
-        header#cabecalho {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: yellow;
-            height: 1000px;
-            box-shadow: 2px 2px 2px rgba(0,0,0,.8);
-            background-image: url('/media/images/back-head.jpg');
-        }
-    /* window gameplay mobile */
-    div#windows-play {
-        position: absolute;
-        top: 100px;
-        color: blueviolet;
-        background-color: rgba(0,0,0,.8);
-        border-radius: 40px;
-        text-shadow: 2px 2px 2px black;
-    }
-    div#windows-play h2 {
-        position: relative;
-        font: 3em cursive;
-        font-weight: bolder;
-        top: -10px;
-    }
-    div#windows-play video {
-        position: relative;
-        width: 19rem;
-        height: 15rem;
-        border-radius: 40px;
-    }
-
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Do Hyeon', serif;
+    }   
 }
