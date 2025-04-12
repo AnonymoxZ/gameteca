@@ -78,12 +78,19 @@ div.container-videos {
 
 div.video video {
     position: relative;
+    display: flex;
     height: 400px;
     width: 400px;
     border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 li.video-element {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 15px;
     border-radius: 50px;
     padding-bottom: 50px;
@@ -199,33 +206,31 @@ span.title-description {
         display: flex;
         min-height: 100vh;
         flex-direction: column;
-        width: 50%;
-        height: 30%;
+        width: 20%;
+        height: 50%;
         top: 350px;
     }
     
     div.video video {
         position: relative;
         display: flex;
+        height: 350px;
+        width: 350px;
+        border: 1px solid black;
         justify-content: center;
         align-items: center;
-        align-items: center;
         flex-direction: column;
-        height: 330px;
-        width: 330px;
-        border: 1px solid black;
     }
     li.video-element {
         display: inline-block;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        justify-content: center;
         margin: 15px;
         border-radius: 50px;
         padding-bottom: 50px;
         background-color: antiquewhite;
     }
-    
     span.title-description {
         position: relative;
         color: black;
@@ -233,4 +238,16 @@ span.title-description {
         font-size: 15px;
         font-family: 'Do Hyeon', serif;
     }   
+}
+
+footer#footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-top:  1px solid rgb(62, 58, 58);
+    padding: 1rem;
+    top: 1040px;
+    font-family: 'Graduate';
 }
